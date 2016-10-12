@@ -78,14 +78,16 @@ You may want to invest in a scripting language that has a good package manager i
 
 Also think about injecting start and end shims into those core alias steps. Something like a "build_init" and "build_end" alias step that will be managed by your core build and deployment scripts and are included in every repo's core "build" alias definition. This will allow you to roll inject common steps into all application build and deployment pipelines without updating ever single repo.
 
+* [Here](https://github.com/NorthfieldIT/build-deployment-patterns-and-examples/tree/master/example-code/Northfield.Scripts) is an example of the scripts we've built to manage our build and deployments.
+
 
 ## Build System Templates
 Having some sort of templating system for your pipelines will simplify your life as you start to scale up. You will be able to quickly roll out Build System wide changes with less fuss. This will be further supported by various other changes made to support Convention Over Configuration as you can make some assumptions around whether or not the change will be risky.
 
 Teamcity has a fairly good stock templating system with inheritance that allows you to make a job an extension of a base template. You can create a few stock templates to represent the pipeline and then extend them for each new app. Jenkins has a plugin called "Job DSL" which is now part of the stock install of Jenkins 3. This will allow you to use Groovy to define jobs with code.
 
-LINK TO OUR IMPLEMENTATION EXAMPLE
-Link to example article
+* [Here](https://github.com/NorthfieldIT/build-deployment-patterns-and-examples/tree/master/example-code/jenkins-dsl-example) is an example of our Jenkins DSL implementation.
+* [Here](http://marcesher.com/2016/06/13/jenkins-as-code-creating-reusable-builders/) is an article that we used as inspiration for our implementation.
 
 ## Single Button Deploy
 Deployments should be as easy as pressing the easy button ... in fact it should be a button that says "EASY"! It may take a bit of extra work but having a single button means the cost to deploy drops to rock bottom which encourages deploys to occur more often. It also makes the entire process much more approachable and distributes the work involved in deploying as it no longer requires to go through a single approval source.
