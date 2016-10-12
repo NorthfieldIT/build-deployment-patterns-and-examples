@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-watch": "*",
+    "gulp-run": "1.6.11",
+    "gulp-shell": "0.4.3",
+    "gulp-notify": "2.2.0"
+  }
+}

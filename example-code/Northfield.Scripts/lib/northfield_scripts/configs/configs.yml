@@ -1,0 +1,54 @@
+
+
+verbose: true
+
+rubocop:
+  max_offenses: 0
+  options:
+    - "--format"
+    - "html"
+    - "-o"
+    - "rubocop.html"
+
+foodcritic:
+  max_warnings: 0
+
+generic:
+  cmds:
+    echo_hello: 'echo hello and welcome to script life!'
+  cmds_with_env:
+    echo_wee:
+      command: 'echo $MESSAGE'
+      env_vars:
+        MESSAGE: 'weeeeeeeeeeeeeeee!'
+
+rspec:
+  options:
+    - "--format"
+    - "doc"
+
+
+phabricator:
+  comment_file: ".phabricator-comment"
+  tee_phabricator: true
+
+package:
+  optional_files:
+    - './.git'
+    - "./attributes/*"
+    - "./recipes/*"
+    - "./spec/*"
+    - "./templates/*"
+  options:
+    - "-zcvf"
+    - "archive.tar.gz"
+    - "--exclude=./archive.tar.gz"
+    - "Gemfile"
+    - "Gemfile.lock"
+    - "rakefile.rb"
+    - "./buildscripts/*"
+
+berks:
+  install:
+    options:
+      - ""

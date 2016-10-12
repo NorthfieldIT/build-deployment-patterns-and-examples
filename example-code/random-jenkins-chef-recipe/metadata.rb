@@ -1,0 +1,18 @@
+name 'random-jenkins'
+maintainer 'NorthfieldIT'
+maintainer_email 'paul.everton@northfieldit.com'
+license 'all_rights'
+description 'Installs/Configures jenkins'
+long_description 'Installs/Configures jenkins'
+version '1.0.0'
+
+
+depends 'users'
+depends 'sudo'
+depends 'yum', '~> 3.8.2'
+depends 'os-hardening', '~> 1.4.1'
+depends 'ssh-hardening', '~> 1.2.0'
+depends 'jenkins', '~> 2.6.0'
+depends 'poise-python', '~> 1.4.0'
+depends 'firewall', '~> 2.5.0'
+depends 'nodejs', '~> 2.4.4'

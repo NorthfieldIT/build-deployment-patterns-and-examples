@@ -1,0 +1,9 @@
+{
+  "id": "random.user",
+  "groups": [
+    "sysadmin"
+  ],
+  "ssh_keys": [
+    "ssh-rsa randomkeyhere"
+  ]
+}

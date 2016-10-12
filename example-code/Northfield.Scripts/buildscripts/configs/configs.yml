@@ -1,0 +1,6 @@
+# encoding: utf-8
+app_name: northfield-scripts
+
+rubocop:
+  max_offenses: 12
+

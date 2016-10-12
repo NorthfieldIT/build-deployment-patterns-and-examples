@@ -1,0 +1,10 @@
+# encoding: utf-8
+source 'http://rubygems.org'
+
+gem 'northfield_scripts', :path => '.'
+gem 'deep_merge', :require => 'deep_merge/rails_compat'
+gem 'rspec'
+gem 'rake'
+gem 'foodcritic'
+gem 'rubocop', '0.39.0'
+gem 'simplecov'

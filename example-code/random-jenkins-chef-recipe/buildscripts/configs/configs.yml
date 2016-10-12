@@ -1,0 +1,8 @@
+# encoding: utf-8
+app_name: random-jenkins
+
+rubocop:
+  max_offenses: 0
+
+foodcritic:
+  max_warnings: 3

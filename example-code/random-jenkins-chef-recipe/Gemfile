@@ -1,0 +1,5 @@
+
+source 'https://rubygems.org'
+
+gem 'berkshelf', '<= 4.0.1'
+gem 'northfield_scripts', :path => '../Northfield.Scripts'

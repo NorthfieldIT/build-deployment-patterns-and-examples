@@ -1,0 +1,26 @@
+# encoding: utf-8
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'spec/spec_helper.rb'
+    - 'rakefile.rb'
+    - 'Gemfile'
+    - 'example/rakefile.rb'
+    - 'example/Gemfile'
+    - 'example/**/*'
+    - 'spec/**/*'
+    - 'metadata.rb'
+    - 'test/**/*'
+    - 'Vagrantfile'
+Style/Encoding:
+  Enabled: true
+
+LineLength:
+  Max: 1000
+
+SignalException:
+  EnforcedStyle: only_raise
+
+CaseIndentation:
+  IndentWhenRelativeTo: end
