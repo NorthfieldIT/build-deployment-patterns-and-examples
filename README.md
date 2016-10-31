@@ -136,6 +136,7 @@ Using Chef? Don't use it to deploy your application. Application deployments req
 # Additional Links and Presentations
 * http://githubengineering.com/move-fast/ : Article discussing how Github continuously deployed a core architecture migration.
 * https://engineering.shopify.com/17489060-docker-at-shopify-how-we-built-containers-that-power-over-100-000-online-shops : Article discussing how Spotify use convention over configuration to build their containers.
+* https://shopifyengineering.myshopify.com/blogs/engineering/continuous-deployment-at-shopify
 * https://engineering.semantics3.com/2016/06/15/a-perl-toolchain-for-building-micro-services-at-scale/ : Article on Semantics3 Build and Deployment Pipelines for their micro services.
 * https://www.youtube.com/watch?v=kb-m2fasdDY : Presentation from Uber -> What I Wish I Had Known Before Scaling Uber to 1000 Services
 * http://www.slideshare.net/nicolefv/the-data-on-devops-making-the-case-for-awesome : Slides on the Value of DevOps
